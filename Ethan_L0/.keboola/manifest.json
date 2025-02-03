@@ -43,5 +43,20 @@
       "path": "main"
     }
   ],
-  "configurations": []
+  "configurations": [
+    {
+      "branchId": 371494,
+      "componentId": "keboola.ex-sample-data",
+      "id": "104915320",
+      "path": "extractor/keboola.ex-sample-data/demo-google-sheets",
+      "rows": []
+    },
+    {
+      "branchId": 371494,
+      "componentId": "keboola.snowflake-transformation",
+      "id": "104915849",
+      "path": "transformation/keboola.snowflake-transformation/active-orders",
+      "rows": []
+    }
+  ]
 }
