@@ -1,0 +1,26 @@
+{
+  "parameters": {},
+  "storage": {
+    "input": {
+      "tables": [
+        {
+          "source": "in.c-demo-keboola-ex-google-drive-104915320.account",
+          "destination": "account",
+          "where_column": "",
+          "where_values": [],
+          "where_operator": "eq",
+          "columns": [],
+          "keep_internal_timestamp_column": false
+        }
+      ]
+    },
+    "output": {
+      "tables": [
+        {
+          "destination": "out.c-active-orders.active-orders",
+          "source": "active-orders"
+        }
+      ]
+    }
+  }
+}
