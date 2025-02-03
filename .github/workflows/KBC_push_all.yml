@@ -1,0 +1,33 @@
+name: Manual KBC Push (Ethan_L0)
+on:
+  workflow_dispatch:
+    inputs:
+      force_push:
+        description: 'Use force push'
+        required: false
+        default: false
+        type: boolean
+permissions:
+  contents: write
+jobs:
+  Push_All:
+    # Dynamic generated value
+    environment: ${{github.ref_name == 'main' && 'PROD' || github.ref_name == 'development' && 'DEV' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/install
+        with:
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
+
+      # Generated steps 
+      - name: Push configurations to Ethan_L0
+        uses: ./.github/actions/kbc_push
+        with:
+          workdir: "Ethan_L0"
+          kbcSapiHost: ${{ vars.KBC_SAPI_HOST }}
+          kbcSapiToken: ${{ secrets.KBC_SAPI_TOKEN_Ethan_L0 }}
+          kbcProjectId: ${{ vars.KBC_PROJECT_ID_Ethan_L0 }}
+          kbcBranchId: ${{ vars.KBC_BRANCH_ID_Ethan_L0 }}
+          forcePush: ${{ github.event.inputs.force_push }}
+      # End generated steps
