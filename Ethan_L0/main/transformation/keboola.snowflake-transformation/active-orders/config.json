@@ -19,6 +19,10 @@
         {
           "destination": "out.c-active-orders.active-orders",
           "source": "active-orders"
+        },
+        {
+          "destination": "out.c-active-orders.inactive-orders",
+          "source": "inactive-orders"
         }
       ]
     }
