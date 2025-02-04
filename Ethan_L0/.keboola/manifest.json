@@ -46,6 +46,13 @@
   "configurations": [
     {
       "branchId": 371494,
+      "componentId": "keboola.ex-db-mysql",
+      "id": "105065094",
+      "path": "extractor/keboola.ex-db-mysql/test-my-sql",
+      "rows": []
+    },
+    {
+      "branchId": 371494,
       "componentId": "keboola.ex-sample-data",
       "id": "104915320",
       "path": "extractor/keboola.ex-sample-data/demo-google-sheets",
