@@ -53,6 +53,13 @@
     },
     {
       "branchId": 371494,
+      "componentId": "keboola.ex-sample-data",
+      "id": "105462258",
+      "path": "extractor/keboola.ex-sample-data/my-sql-demo-data",
+      "rows": []
+    },
+    {
+      "branchId": 371494,
       "componentId": "keboola.snowflake-transformation",
       "id": "104915849",
       "path": "transformation/keboola.snowflake-transformation/active-orders",
